@@ -1,0 +1,404 @@
+%% BioMed_Central_Tex_Template_v1.06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+%\documentclass{bmcart}
+
+%%% Load packages
+%\usepackage{amsthm,amsmath}
+%\RequirePackage{natbib}
+%\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\includegraphic{}
+\def\includegraphics{}
+
+
+
+%%% Put your definitions there:
+\startlocaldefs
+\endlocaldefs
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{Meeting Report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{TODO: Genomics by the beach?}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors here                   %%
+%%                                          %%
+%% Specify information, if available,       %%
+%% in the form:                             %%
+%%   <key>={<id1>,<id2>}                    %%
+%%   <key>=                                 %%
+%% Comment or delete the keys which are     %%
+%% not used. Repeat \author command as much %%
+%% as required.                             %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[
+   addressref={aff1, aff2},                   % id's of addresses, e.g. {aff1,aff2}
+   noteref={n1},                        % id's of article notes, if any
+   email={hickey@wehi.edu.au}   % email address
+]{\inits{PFH}\fnm{Peter F} \snm{Hickey}}
+\author[
+   addressref={aff1,aff2},
+  noteref={n1},
+   corref={aff3},                       % id of corresponding address, if any
+   email={\textbf{TODO}}
+]{\inits{MDB}\fnm{Mark D} \snm{Robinson}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{%                           % unique id
+  \orgname{Bioinformatics Division, Walter and Eliza Hall Institute of Medical Research}, % university, etc
+  \street{1G Royal Parade},                     %
+  \postcode{3052}                                % post or zip code
+  \city{Parkville},                              % city
+  \state{Victoria},
+  \cny{Australia}                                    % country
+}
+\address[id=aff2]{%                           % unique id
+  \orgname{Department of Mathematics and Statistics, University of Melbourne}, % university, etc
+%  \street{Waterloo Road},                     %
+  \postcode{3010}                                % post or zip code
+  \city{Parkville},                              % city
+  \state{Victoria},
+  \cny{Australia}                                    % country
+}
+\address[id=aff3]{%
+  \orgname{\textbf{TODO}},
+  \street{\textbf{TODO}},
+  \postcode{\textbf{TODO}}
+  \city{Zurich},
+  \cny{Switzerland}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+%\note{Sample of title note}     % note to the article
+\note[id=n1]{Equal contributor} % note, connected to author
+\end{artnotes}
+
+%\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstractbox}
+
+\begin{abstract} % abstract
+A report on the $35^{th}$ Annual Lorne Genome Conference 2014 held in Lorne, Victoria, Australia, February 16-18, 2014. 
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The keywords begin here                  %%
+%%                                          %%
+%% Put each keyword in separate \kwd{}.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{keyword}
+\kwd{meeting report}
+\kwd{Lorne Genome}
+\kwd{author}
+\end{keyword}
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+\end{abstractbox}
+%
+\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Main Body begins here                %%
+%%                                          %%
+%% Please refer to the instructions for     %%
+%% authors on:                              %%
+%% http://www.biomedcentral.com/info/authors%%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%% See the Results and Discussion section   %%
+%% for details on how to create sub-sections%%
+%%                                          %%
+%% use \cite{...} to cite references        %%
+%%  \cite{koon} and                         %%
+%%  \cite{oreg,khar,zvai,xjon,schn,pond}    %%
+%%  \nocite{smith,marg,hunn,advi,koha,mouse}%%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
+% <put your article body there>
+
+%%%%%%%%%%%%%%%%
+%% Background %%
+%%
+
+The $35^{th}$ Annual Lorne Genome Conference attracted scientists from around Australia and internationally to the Victorian Surf Coast town of Lorne for 3 days of genomics by the beach. The diversity of genomics research was on show across the 35 talks ($43\%$ by women) and more than 250 poster presentations. Thomas Preiss (Australian National University, Australia) was awarded the Julian Wells medal in recognition of his research in RNA biology and for his support of the Lorne Genome conference. Prizes were also given to Geoff Faulkner (Mater Medical Research Institute, Australia), Daniela Quintana (Massey University, New Zealand), Laura Norton (University of New South Wales, Australia), Farrah El-Saffin (Walter and Eliza Hall Institute of Medical Research, Australia) and Sam Buckberry (Robinson Institute, Australia) in a session dedicated to young researchers and students.
+
+ \textbf{TODO: }In summarising the meeting, we have chosen to focus on presentations \textbf{$\ldots$}
+
+\textbf{TODO:} I'm rather aware that most of the talks I've discussed are from "big name" international speakers - not great. But these are the talks (a) I found most interesting, (b) have the best notes on so can fairly summarise and (c) only 15/35 talks were given by people working in Aus/NZ, of which 4 were student prize talks.
+
+\section*{Australian stuff}
+Australia is home to many unique animals and plant species. \textbf{Examples. How their genomes are useful. Segue into Henrik's and Katherine's talks}
+
+\begin{itemize}
+	\item Henrik Kaessmann on mammalian transcriptomes (PH: missed this talk)
+	\item Katherine Belov mammalian venoms
+\end{itemize}
+
+\section*{Disease and Medical Genomics}
+Elaine Mardis (The Genome Institute at Washington University, USA) gave a wonderful opening keynote presentation on translating cancer genomics research into clinical care. Mardis described how her team integrate whole genome sequencing (WGS), whole exome sequencing (WES) and RNA sequencing (RNA-seq). She emphasised the extra information that RNA-seq provides, as they find that only $40\%$ of mutated genes are expressed in the tumour (\textbf{in what context? Cancer generally or was she talking about a specific cancer at this point?}). Aside from the challenges of integrating multiple data sources, Mardis also described how these results are then presented to the Washington University School of Medicine's Tumour Board. The training of physicians in understanding the strengths of limitations of genomics research is criticial, Mardis told the audience, and described 3 (\textbf{or 4?}) cases presented to the review board. Not only were these fascinating examples of translating cancer genomics into clinical practice, but they also drew shocked laughs from the audience about the realities of the American health care system. 
+
+\begin{itemize}
+	\item Another presentation in this theme?
+	\item Matt Brown
+\end{itemize}
+
+
+
+\section*{Epigenomics and Chromatin}
+Epigenomics and the higher-order organisation of the genome were the theme of several presentations. Bing Ren (University of San Diego School of Medicine, USA) spoke about detecting enhancers and re-constructing the 3-dimensional structure of the genome using the chromatin-conformation-capture technology, Hi-C. Ren showed that Hi-C has more strings to its proverbial bow and described his group's (\textbf{? and others?}) recent foray into using Hi-C for long-range haplotyping of genome. Resolving haplotypes is still a difficult problem, particularly in human genetics where most sequencing is done using Illumina's short read technology. Haplotyping by Hi-C, along with recent improvements in throughput by Pacific Biosciences' longer read technology and Illumina's commercialisation of the Moleculo technology, are helping to "close the gap".
+
+Wendy Bickmore (University of Edinburgh, UK) presented data showing that the most active regions of genomes are often found in the centre of the nucleus whereas the nuclear periphery is occupied by gene-poor, inactive chromosomal domains. Bickmore described recent experiments that seek to determine whether it is the genomic structure that dictates function or the function that dictates the structure by perturbing either the nuclear organisation or transcription.
+
+Joe Ecker (Salk Institute, USA) took us from the world of human genomes to the world of the plant genomes and back again, in his talk on DNA methylation. \emph{Arabidopsis Thaliana} 
+
+\begin{itemize}
+	\item Vardhman Rakyan
+	\item Bing Ren
+	\item Constance Alabert
+	\item Helle Ulrich
+	\item Wendy Bickmore
+	\item Christine Disteche
+	\item Guoliang Xu
+	\item Heather Lee
+	\item Joe Ecker
+\end{itemize}
+
+\section*{Conclusions}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Backmatter begins here                   %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{backmatter}
+
+section*{Abbreviations}
+WGS: whole genome sequencing; WES: whole exome sequencing; RNA-seq: RNA sequencing
+
+\section*{Competing interests}
+  The authors declare that they have no competing interests.
+
+\section*{Author's contributions}
+    Text for this section \ldots
+
+\section*{Acknowledgements}
+ Thanks to everyone who tweeted from this conference, especially Chris Wells (@mincle), Thomas Preiss (@tominaustralia), Matthew Wakefield (@genomematt), Alicia Oshlack (@AliciaOshlack) and Jeff Craig (@DrChromo).
+
+\section*{Twitter}
+   The tweets from this conference can be found using the hashtag \#lornegenome. You can follow both authors on Twitter at @PeteHaitch and @markrobinsonca.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  The Bibliography                       %%
+%%                                                         %%
+%%  Bmc_mathpys.bst  will be used to                       %%
+%%  create a .BBL file for submission.                     %%
+%%  After submission of the .TEX file,                     %%
+%%  you will be prompted to submit your .BBL file.         %%
+%%                                                         %%
+%%                                                         %%
+%%  Note that the displayed Bibliography will not          %%
+%%  necessarily be rendered by Latex exactly as specified  %%
+%%  in the online Instructions for Authors.                %%
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% if your bibliography is in bibtex format, use those commands:
+%\bibliographystyle{bmc-mathphys} % Style BST file
+%\bibliography{bmc_article}      % Bibliography file (usually '*.bib' )
+
+% or include bibliography directly:
+% \begin{thebibliography}
+% \bibitem{b1}
+% \end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Figures                       %%
+%%                               %%
+%% NB: this is for captions and  %%
+%% Titles. All graphics must be  %%
+%% submitted separately and NOT  %%
+%% included in the Tex document  %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% Do not use \listoffigures as most will included as separate files
+
+%\section*{Figures}
+%\begin{figure}[h!]
+%\caption{\csentence{Sample figure title.}
+%      A short description of the figure content
+%      should go here.}
+%      \end{figure}
+%
+%\begin{figure}[h!]
+%  \caption{\csentence{Sample figure title.}
+%      Figure legend text.}
+%      \end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Tables                        %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Use of \listoftables is discouraged.
+%%
+%\section*{Tables}
+%\begin{table}[h!]
+%\caption{Sample table title. This is where the description of the table should go.}
+%      \begin{tabular}{cccc}
+%        \hline
+%           & B1  &B2   & B3\\ \hline
+%        A1 & 0.1 & 0.2 & 0.3\\
+%        A2 & ... & ..  & .\\
+%        A3 & ..  & .   & .\\ \hline
+%      \end{tabular}
+%\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Additional Files              %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section*{Additional Files}
+%  \subsection*{Additional file 1 --- Sample additional file title}
+%    Additional file descriptions text (including details of how to
+%    view the file, if it is in a non-standard format or the file extension).  This might
+%    refer to a multi-page table or a figure.
+%
+%  \subsection*{Additional file 2 --- Sample additional file title}
+%    Additional file descriptions text.
+
+
+\end{backmatter}
+\end{document}
