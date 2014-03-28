@@ -112,17 +112,9 @@
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\author[
-   addressref={aff1, aff2},                   % id's of addresses, e.g. {aff1,aff2}
-   noteref={n1},                        % id's of article notes, if any
-   email={hickey@wehi.edu.au}   % email address
-]{\inits{PFH}\fnm{Peter F.} \snm{Hickey}}
-\author[
-   addressref={aff3,aff4},
-  noteref={n1},
-   corref={aff3},                       % id of corresponding address, if any
-   email={mark.robinson@imls.uzh.ch}
-]{\inits{MDR}\fnm{Mark D.} \snm{Robinson}}
+
+\author[addressref={x1,x2},noteref={n1},email={hickey@wehi.edu.au}]{\inits{PFH}\fnm{Peter F} \snm{Hickey}}
+\author[addressref={x3,x4},noteref={n1},corref={x3},email={mark.robinson@imls.uzh.ch}]{\inits{MDR}\fnm{Mark D} \snm{Robinson}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                          %%
@@ -133,7 +125,7 @@
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\address[id=aff1]{%                           % unique id
+\address[id=x1]{%                           % unique id
   \orgname{Bioinformatics Division, Walter and Eliza Hall Institute of Medical Research}, % university, etc
   \street{1G Royal Parade},                     %
   \postcode{3052}                                % post or zip code
@@ -141,7 +133,8 @@
   \state{Victoria},
   \cny{Australia}                                    % country
 }
-\address[id=aff2]{%                           % unique id
+
+\address[id=x2]{%                           % unique id
   \orgname{Department of Mathematics and Statistics, University of Melbourne}, % university, etc
 %  \street{Waterloo Road},                     %
   \postcode{3010}                                % post or zip code
@@ -149,14 +142,16 @@
   \state{Victoria},
   \cny{Australia}                                    % country
 }
-\address[id=aff3]{%
+
+\address[id=x3]{%
   \orgname{Institute of Molecular Life Sciences, University of Zurich},
   \street{Winterthurerstrasse 190},
   \postcode{8057}
   \city{Zurich},
   \cny{Switzerland}
 }
-\address[id=aff4]{%
+
+\address[id=x4]{%
   \orgname{SIB Swiss Insitute of Bioinformatics, University of Zurich},
   %\street{Winterthurerstrasse 190},
   %\postcode{8057}
@@ -176,7 +171,7 @@
 
 \begin{artnotes}
 %\note{Sample of title note}     % note to the article
-\note[id=n1]{Equal contributor} % note, connected to author
+\note[id=n1]{Equal contribution} % note, connected to author
 \end{artnotes}
 
 %\end{fmbox}% comment this for two column layout
@@ -251,7 +246,9 @@ A report on the $35^{th}$ Annual Lorne Genome Conference 2014 held in Lorne, Vic
 %% Background %%
 %%
 
-The $35^{th}$ Annual Lorne Genome Conference (abstracts are freely available online [http://lornegenome.org/program/]) attracted scientists from around Australia and internationally to the Victorian Surf Coast town of Lorne for 3 days of genomics by the beach. The diversity of genomics research was on show across the 35 talks, including a session dedicated to young researchers and students, and more than 170 poster presentations.
+% http://goo.gl/rK999U http://lornegenome.org/program/
+
+The $35^{th}$ Annual Lorne Genome Conference (abstracts online at http://goo.gl/rK999U) attracted scientists from around Australia and internationally to the Victorian Surf Coast town of Lorne for 3 days of genomics by the beach. The diversity of genomics research was on show across the 35 talks, including a session dedicated to young researchers and students, and more than 170 poster presentations.
 
 The standard of scientific talks was extremely high in all sessions.  However, in summarising the meeting, we have chosen to focus on presentations that i) we can most directly relate to; ii) that we found most interesting.  Notably, only 15 of 35 talks were from Australian or New Zealand speakers, highlighting the variety of genomics talent, both in delegates and speakers, that remains the staple of the annual Lorne Genome meeting.  The setting in summertime, 40 metres from a popular beach, does little to dampen the spirits of the delegates!
 
@@ -261,7 +258,7 @@ The standard of scientific talks was extremely high in all sessions.  However, i
 %\textbf{TODO: I'm rather aware that most of the talks I've discussed are from "big namef international speakers - not great. But these are the talks (a) I found most interesting, (b) have the best notes on so can fairly summarise and (c) only 15/35 talks were given by people working in Aus/NZ, of which 4 were student prize talks, so most were international speakers in any case.}
 
 \section*{Genomes Down Under}
-Scientists have long been fascinated by Australia's unique wildlife. In more recent times, scientists have studied the genomes of Australia's marsupials and monotremes, such as the tammar wallaby and the platypus, to learn about embryonic development, sexual reproduction and the evolution of mammalian sex chromosomes. Genomics research has also been hugely important in the race to protect the Tasmanian devil from extinction in the wild due to the Tasmanian devil facial tumour disease. Continuing in this tradition, Katherine Belov (University of Sydney, Australia) spoke about the antimicrobial and venom peptides of Australian mammals. The male platypus is one of the few venomous mammals (but only one amongst many of Australia's other venomous creatures). Belov is studying the transcriptome and proteome of platypus venom to learn about its evolutionarily origins. Belov also spoke about antimicrobial peptide genes found in marsupial and monotreme genomes, and presented evidence that these peptides are promising candidates as novel antibiotics against multi-drug resistant bacterial strains.  Will humans drink marsupial milk in the near future to ward off multi-resistant bugs ?
+Scientists have long been fascinated by Australia's unique wildlife. In more recent times, scientists have studied the genomes of Australia's marsupials and monotremes, such as the tammar wallaby and the platypus, to learn about embryonic development, sexual reproduction and the evolution of mammalian sex chromosomes. Genomics research has also been hugely important in the race to protect the Tasmanian devil from extinction in the wild due to the Tasmanian devil facial tumour disease. Continuing in this tradition, Katherine Belov (University of Sydney, Australia) spoke about the antimicrobial and venom peptides of Australian mammals. The male platypus is one of the few venomous mammals (but only one amongst many of Australia's other venomous creatures). Belov is studying the transcriptome and proteome of platypus venom to learn about its evolutionarily origins. Belov also spoke about antimicrobial peptide genes found in marsupial and monotreme genomes, and presented evidence that these peptides are promising candidates as novel antibiotics against multi-drug resistant bacterial strains.  Will humans drink marsupial milk in the near future to ward off bugs?
 
 With the world-renowned expert in Y chromosome biology, Professor Jenny Graves, in the audience, Henrik Kaessmann (Centre for Integrative Genomics, University of Lausanne, Switzerland) gave compelling insights into the evolution of Y chromosome and mammalian tissue transcriptomes.  This is indeed a difficult challenge, since the chromosome Y is very repetitive and refractory to short read sequencing. Although not discussed, there is certainly scope for long-read third generation sequencing technologies to shine here and indeed, a quick search reveals various Twitter flurries on exactly this topic.  Despite this, Henrik showed that, intriguingly, mutation rates are much higher for mammals and marsupials, among chromosome Y sequence compared to chromosome X, yet this difference was absent from monotremes (e.g. platypus).
 
@@ -271,11 +268,11 @@ Away from Australian-centric life forms, Jason Wong (University of New South Wal
 %(\textbf{Is this what she meant by the power of RNA-seq? In what context - Cancer generally or was she talking about a specific cancer at this point?})
 
 \section*{Disease and Medical Genomics}
-Elaine Mardis (The Genome Institute at Washington University, USA) gave a engaging keynote presentation on translating cancer genomics research into clinical care. Mardis described how her team integrate whole genome sequencing (WGS), whole exome sequencing (WES) and RNA sequencing (RNA-seq).  She highlighted that WGS and WES can be used to cross-validate each other, but even then, researchers often encounter an ongoing near-impossible data interpretation problem (i.e., long lists of mutations).  In particular, she emphasised the extra information that RNA-seq can provide, which sometimes manifests in unusual ways.  In one example, $40\%$ of mutated genes are still expressed in the tumour.  In another example, interpreting the long list of mutations was daunting; but, it was easy to find that FLT3 was ``wildly active'' in leukaemic cells, which lead to the successful off-label use of Sunitinib \cite{NYTIMES}.  Aside from the challenges of integrating multiple data sources -- data collection is easy, data interpretation is hard -- Mardis also described how these results are then presented to the Washington University School of Medicine's Tumour Board to help determine the clinical care of the patients. It is critical that physicians are well-trained in understanding the strengths and limitations of genomics research, Mardis told the audience, and altogether, described 3 cases presented to the review board. Not only were these fascinating examples of translating cancer genomics into clinical practice, but they also drew shocked laughs from the mostly-Australian audience about the realities of the American health care system.
+Elaine Mardis (The Genome Institute at Washington University, USA) gave a engaging keynote presentation on translating cancer genomics research into clinical care. Mardis described how her team integrate whole genome sequencing (WGS), whole exome sequencing (WES) and RNA sequencing (RNA-seq).  She highlighted that WGS and WES can be used to cross-validate each other, but even then, researchers often encounter an ongoing near-impossible data interpretation problem (i.e., long lists of mutations).  In particular, she emphasised the extra information that RNA-seq can provide, which sometimes manifests in unusual ways.  In one example, $40\%$ of mutated genes are still expressed in the tumour.  In another example, interpreting the long list of mutations was daunting; but, it was easy to find that FLT3 was ``wildly active'' in leukaemic cells, which lead to the successful off-label use of Sunitinib (http://goo.gl/mosjVm).  Aside from the challenges of integrating multiple data sources -- data collection is easy, data interpretation is hard -- Mardis also described how these results are then presented to the Washington University School of Medicine's Tumour Board to help determine the clinical care of the patients. It is critical that physicians are well-trained in understanding the strengths and limitations of genomics research, Mardis told the audience, and altogether, described 3 cases presented to the review board. Not only were these fascinating examples of translating cancer genomics into clinical practice, but they also drew shocked laughs from the mostly-Australian audience about the realities of the American health care system.
 
 %Vardhman Rakyan gave an entertaining and, at times tongue-in-cheek, overview of the critical issues in designing epigenome-wide association studies, an arguably much more difficult task given the ``plasticity'' of epigenomes by cell type and according to environment stimuli as well as the sheer large dimensionality of such a profile.  Importantly, there are confounders abound everywhere; imagine that DNA methylation as a biomarker is accurate to predict a patient's age to within 1 year.
 
-% [NYTIMES] http://www.nytimes.com/2012/07/08/health/in-gene-sequencing-treatment-for-leukemia-glimpses-of-the-future.html?pagewanted=1&_r=2&hp
+% http://goo.gl/mosjVm [NYTIMES] http://www.nytimes.com/2012/07/08/health/in-gene-sequencing-treatment-for-leukemia-glimpses-of-the-future.html?pagewanted=1&_r=2&hp
 
 %\textbf{TODO: Another presentation in this theme? Or give the section a new title and include some other presentations?}
 
@@ -292,7 +289,7 @@ Joseph Ecker (Salk Institute, USA) closed the conference with a talk that took u
 \section*{Conclusions}
 Aside from the strong program of talks, the two poster sessions were very well-attended and provided an excellent opportunity to meet new colleagues and catch up with old friends. Indeed, many discussions that started during the poster sessions were continued at the bar afterwards. 
 
-Given the current Australian political climate (yes, the one where there is no Minister for Science), ``{\em let's have a bloke's question}'' \cite{INDEPENDENT}.  How well did Lorne Genome get the gender balance?  Overall, $43\%$ of the talks were given by women, which is a great result, given the ratios amongst senior scientists in science.  However, there is clearly room for improvement in the Millennium Science Young Investigators Award, which is now 14 for 15 for male awardees; on the flip side, women dominated the poster prizes this year.  Interestingly, the Lorne Protein Conference, one of the sister meetings to Lorne Genome, aims for full transparency since 2012 and publishes the gender ratios of abstracts, selected abstracts, committee members, speakers, chairs and delegates \cite{LORNEPROTEIN}.  So, next time you are asked to chair, speak or be on a meeting committee, be sure to publish your statistics!
+Given the current Australian political climate (yes, the one where there is no Minister for Science), ``{\em let's have a bloke's question}'' (http://goo.gl/7pZfvo).  How well did Lorne Genome get the gender balance?  Overall, $43\%$ of the talks were given by women, which is a great result, given the ratios amongst senior scientists in science.  However, there is clearly room for improvement in the Millennium Science Young Investigators Award, which is now 14 for 15 for male awardees; on the flip side, women dominated the poster prizes this year.  Interestingly, the Lorne Protein Conference, one of the sister meetings to Lorne Genome, aims for full transparency since 2012 and publishes the gender ratios of abstracts, selected abstracts, committee members, speakers, chairs and delegates (http://goo.gl/NmqcUZ).  So, next time you are asked to chair, speak or be on a meeting committee, be sure to publish your statistics!
 
 % [LORNEPROTEIN] http://www.lorneproteins.org/policies/
 
@@ -325,14 +322,10 @@ WGS: whole genome sequencing; WES: whole exome sequencing; RNA-seq: RNA sequenci
 All authors read and approved the final manuscript.
 
 \section*{Acknowledgements}
-Thanks to the Lorne Genome 2014 Twitter superstars, most notably Christine Wells (@mincle), Thomas Preiss (@tominaustralia), Matthew Wakefield (@genomematt), Alicia Oshlack (@AliciaOshlack) and Jeff Craig (@DrChromo).
- 
-We also thank Alicia Oshlack and Matthew Wakefield for helpful comments on a draft of this report.
+Thanks to the Lorne Genome 2014 Twitter superstars, most notably Christine Wells (@mincle), Thomas Preiss (@tominaustralia), Matthew Wakefield (@genomematt), Alicia Oshlack (@AliciaOshlack) and Jeff Craig (@DrChromo).  We also wish to thank Alicia Oshlack and Matthew Wakefield for helpful comments on a earlier draft of this report.
 
 \section*{Twitter}
-The tweets from this conference can be found using the hashtag \#lornegenome. You can follow both authors on Twitter at @PeteHaitch and @markrobinsonca.
-
-
+The tweets from this conference can be found using the hashtag \#lornegenome. You can follow both authors on Twitter at @PeteHaitch and @markrobinsonca, respectively.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                  The Bibliography                       %%
@@ -418,7 +411,6 @@ The tweets from this conference can be found using the hashtag \#lornegenome. Yo
 %
 %  \subsection*{Additional file 2 --- Sample additional file title}
 %    Additional file descriptions text.
-
 
 \end{backmatter}
 \end{document}
